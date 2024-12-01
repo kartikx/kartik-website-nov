@@ -1,8 +1,10 @@
 :root {
     /* --bg-primary: #1d162a; */
-    --bg-primary: #e2bea9;
-    --text-primary: #a9596a;
-    --accent: #6d597a;
+    /* --bg-primary: #f9eeea; */
+    --bg-primary: #fdeff1d5;
+    --text-primary: #d8836c;
+    /* --text-primary: #bd7769; */
+    --accent: #ab5a6c;
     --secondary: #2d2d2d;
 }
 
@@ -17,7 +19,7 @@ body {
 }
 
 .container {
-    width: 60%;
+    width: 50%;
     margin: 0 auto;
     max-width: 1200px;
     padding: 2rem;
