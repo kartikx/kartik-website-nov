@@ -1,9 +1,6 @@
 :root {
-    /* --bg-primary: #1d162a; */
-    /* --bg-primary: #f9eeea; */
     --bg-primary: #fdeff1d5;
     --text-primary: #d77357;
-    /* --text-primary: #bd7769; */
     --accent: #ab5a6c;
     --secondary: #2d2d2d;
 }
@@ -23,6 +20,14 @@ body {
     margin: 0 auto;
     max-width: 1200px;
     padding: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+
+    /* Adjust the max-width as per your breakpoint for mobile */
+    .container {
+        width: 80%;
+    }
 }
 
 .highlight {
@@ -53,6 +58,7 @@ body {
 
 .social-links {
     display: flex;
+    justify-content: start;
     gap: 2rem;
     margin-top: 10rem;
 }
@@ -91,10 +97,8 @@ h2 {
 
 .nav> :first-child {
     margin-right: auto;
-    /* pushes all other items to the right */
 }
 
 .nav> :not(:first-child) {
     margin-left: 1rem;
-    /* adds spacing between right-side items */
 }
