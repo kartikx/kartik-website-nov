@@ -96,8 +96,20 @@ h2 {
 }
 
 @media screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+    h1,
+    h2,
+    h3 {
+        font-size: 1.4rem;
+        /* Adjust heading sizes for mobile */
+    }
+
     .container {
-        width: 80%;
+        width: 90%;
     }
 
     .social-links {
