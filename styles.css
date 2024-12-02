@@ -22,13 +22,6 @@ body {
     padding: 2rem;
 }
 
-@media screen and (max-width: 768px) {
-
-    /* Adjust the max-width as per your breakpoint for mobile */
-    .container {
-        width: 80%;
-    }
-}
 
 .highlight {
     color: var(--accent);
@@ -58,8 +51,7 @@ body {
 
 .social-links {
     display: flex;
-    justify-content: start;
-    gap: 2rem;
+    gap: 1rem;
     margin-top: 10rem;
 }
 
@@ -101,4 +93,15 @@ h2 {
 
 .nav> :not(:first-child) {
     margin-left: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 80%;
+    }
+
+    .social-links {
+        justify-content: left;
+        gap: 0.5rem;
+    }
 }
