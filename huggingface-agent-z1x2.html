@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kartik</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="container">
+    <header class="nav">
+        <a href="/">kartik</a>
+        <a href="/blog.html">blog</a>
+        <a href="/list.html">list</a>
+    </header>
+    <main>
+        <h1>Hugging Face Agent AI Internship</h1>
+        Hi Hugging Face! 🤗
+        <br>
+        I'm Kartik, a Master's in Computer Science student at University of Illinois, Urbana-Champaign where I am
+        researching multi-agent systems, distributed systems and machine learning. I am really excited by the
+        opportunity to work at Hugging Face and contribute towards democratizing good AI.
+        <br>
+        I have a strong background in ML, Systems and Open Source. I believe I can contribute
+        towards the Hugging Face mission, and in this post I would like to convince you why.
+        <h2>Multi-Agent Website Cloner</h2>
+        Multi-Agent systems fascinate me. I am particularly interested in leveraging their
+        collaborative potential to model complex tasks. To explore this, I developed a
+        multi-agent system to clone websites. I used the open-source multi-agent framework <a
+            href="https://ag2ai.github.io/ag2/">AutoGen</a> to build this.
+        <br />
+        The system comprises of 3 agents:
+        <ol>
+            <li>Coder: Writes the code to clone a website.</li>
+            <li>Evaluator: Evaluates the coder's attempts and provides feedback.</li>
+            <li>Screenshotter: Takes screenshots of the target and cloned website.</li>
+        </ol>
+        Since multi-agent systems allow fine-grained LLMs that can interact with each other iteratively, they are a
+        lot more accurate at solving complex problems than single agent systems. However, this benefit comes at the cost
+        of increase code complexity with each added agent, as well as a non-determinism due to the nature of LLMs.
+        <br />
+        There is a clear need for a stable, open-source, computer-use framework that can allow everyone to build
+        and deploy multi-agent systems. I would love to contribute towards this goal at Hugging Face.
+        <br>
+        You can watch the demo here: <br />
+        <iframe width="80%" height="400px" src="https://www.youtube.com/embed/_DJ8blleirw?si=Uzc54xxwuZUxJ6VD"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <br>
+        You can find the code <a href="https://github.com/kartikx/multi-agent-website-cloner">here</a>.
+
+        <h2>Model Sharding for LLM Pre-Training</h2>
+        I am also motivated by the urgency to democratize training large ML models. LLMs promise revolutionary
+        capabilities, however only a handful of big tech players can train them today. I am inspired by the current work
+        that <a href="https://huggingface.co/blog/bloom-megatron-deepspeed">Hugging Face is doing in this space.</a>
+        <br />
+        To explore this area, I evaluated several distributed training strategies, such as Data Parallelism, Tensor
+        Parallelism and Pipeline Parallelism using <a href="https://www.deepspeed.ai/">DeepSpeed</a> to train GPT-2 on
+        heterogenous GPUs.
+        <br />
+        Based on these experiments, our team found that optimizing for Data Parallelism is the most efficient. We
+        used this observation to develop an algorithm to search effective model sharding strategies on heterogenous
+        device clusters, reducing search time by 15% compared to the state-of-the-art.
+        <br />
+        You can find the code <a href="https://github.com/kartikx/Metis">here</a>.
+        <h2>Open Source contributions</h2>
+        I am a strong advocate for open-source software, and I have contributed to several projects, including
+        <a href="https://www.digikam.org/">DigiKam</a>, an open-source photo management software and, more recently, <a
+            href="https://github.com/ag2ai/ag2/pulls?q=is:pr+author:kartikx+is:closed">AutoGen</a>.
+        <br />
+        At DigiKam, I contributed over 3000 lines of C++ code to improve the performance of the facial recognition
+        algorithm, and patched 10+ open issues to improve application stability and user experience.
+        <br />
+        I wrote about this experience <a href="https://community.kde.org/GSoC/2020/StatusReports/KartikRamesh">here</a>.
+        <h2>Distributed Systems experience</h2>
+        My biggest strength is my systems engineering skills. Prior to joining University of Illinois, I was a software
+        engineer in the Azure Networking team at Microsoft.<br />
+        I developed a distributed network troubleshooting service to process gigabytes of daily telemetry
+        across 10,000+ routers, reducing incident resolution time by 30%. To do this at scale, I architected an
+        event-driven microservices pipeline using serverless functions and messaging queues. I also designed an
+        interactive React web application for collaborating incident troubleshooting and telemetry visualization.
+        <br />
+        More recently, I have been developing distributed systems in Go. I developed a
+        <a href="https://github.com/kartikx/distributed-file-system">fault-tolerant distributed file system</a>
+        supporting file operations with high availability and eventual consistency. To maintain fault tolerance,
+        I developed a membership protocol, which detects node failures under 5 seconds and ensures 3x replication
+        at all times for all files.
+        <h2>Why should you give me a chance?</h2>
+        I believe that my academic and professional experiences in ML and Systems can be a great asset to Hugging Face.
+        Furthermore, I work really hard, love pushing myself and believe I have a lot of potential. <br />
+        I believe that the work that Hugging Face is doing is important, and I want to be a part of it. I want to
+        surround myself with people that care about democratizing AI. <br />
+        Please give me a shot, I won't let you down.<br />
+        - kartik
+    </main>
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/kartikx" target="_blank">github</a>
+            <a href="https://x.com/kartikxramesh" target="_blank">twitter</a>
+            <a href="https://linkedin.com/in/kartikxramesh" target="_blank">linkedin</a>
+            <a href="https://drive.google.com/file/d/1eyudTVmPBbU1vZ5z4yS3Yp4yKeGzoE7T/view?usp=drive_link"
+                target="_blank">resume</a>
+            <a href="mailto:kartikxramesh@gmail.com">email</a>
+        </div>
+    </footer>
+</body>
+
+</html>
